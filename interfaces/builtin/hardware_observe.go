@@ -101,6 +101,8 @@ network netlink raw,
 # status of hugepages and transparent_hugepage, but not the pages themselves
 /sys/kernel/mm/{hugepages,transparent_hugepage}/{,**} r,
 
+/sys/kernel/mm/ksm/{,*} r,
+
 # systemd-detect-virt
 /{,usr/}bin/systemd-detect-virt ixr,
 # VMs
